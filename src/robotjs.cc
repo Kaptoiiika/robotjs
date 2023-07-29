@@ -593,7 +593,7 @@ NAN_METHOD(keyToggle)
 			break;
 		default:
 			toggleKeyCode(key, down, flags);
-			microsleep(keyboardDelay);
+			//microsleep(keyboardDelay);
 	}
 
 	info.GetReturnValue().Set(Nan::New(1));
